@@ -76,7 +76,7 @@ O objetivo do projeto é demonstrar conceitos práticos de \*\*Backend\*\*, \*\*
 
 ```bash
 
-git clone https://github.com/SEUUSUARIO/laddy-support-bot.git
+git clone https://github.com/wonerdering/laddy-support-bot.git
 
 cd laddy
 
