@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Laddy • Painel Admin</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+  <div class="min-h-screen p-6">
+    <h1 class="text-3xl font-bold text-indigo-600 mb-6">
+      🤖 Laddy • Painel de Chamados
+    </h1>
+
+    <div class="grid grid-cols-3 gap-6 mb-8">
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <p class="text-gray-500">Total de chamados</p>
+        <h2 id="total" class="text-3xl font-bold">—</h2>
+      </div>
+    </div>
+
+    <div id="lista" class="space-y-4"></div>
+  </div>
+
+  <!-- JS SEMPRE NO FINAL -->
+  <script src="/admin.js"></script>
+</body>
+</html>
