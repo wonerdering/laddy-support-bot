@@ -141,18 +141,26 @@ session.history = [];
     return res.json({ reply: "✅ Chamado aberto com sucesso!" });
   }
 
-  // 🤖 IA (OLLAMA)
-  try {
-    const response = await axios.post("http://localhost:11434/api/generate", {
+ // 🤖 IA (OLLAMA)
+try {
+  const response = await axios.post(
+    "http://host.docker.internal:11434/api/generate",
+    {
       model: "llama3",
       prompt: message,
       stream: false
-    });
+    },
+    {
+      timeout: 120000 // evita timeout em respostas longas
+    }
+  );
 
-    res.json({ reply: response.data.response });
-  } catch {
-    res.json({ reply: "Erro ao responder 😕" });
-  }
+  res.json({ reply: response.data.response });
+
+} catch (err) {
+  console.error("Erro IA:", err.message);
+  res.json({ reply: "Erro ao responder 😕" });
+}
 });
 
 // ===============================
