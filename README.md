@@ -6,9 +6,11 @@ Laddy é um projeto de assistente virtual de suporte técnico com abertura autom
 
 
 
-O objetivo do projeto é demonstrar conceitos práticos de \*\*Backend\*\*, \*\*Frontend\*\*, \*\*autenticação\*\*, \*\*gestão de estado\*\*, e \*\*containerização com Docker\*\*.
+O objetivo do projeto é demonstrar conceitos práticos de backend, frontend, autenticação, gestão de estado e containerização com Docker, visando boas práticas de arquitetura e portabilidade da aplicação.
 
 
+
+Integração com IA local (Ollama / LLaMA), sem dependência de APIs externas.
 
 ---
 
@@ -76,7 +78,7 @@ O objetivo do projeto é demonstrar conceitos práticos de \*\*Backend\*\*, \*\*
 
 ```bash
 
-git clone https://github.com/wonerdering/laddy.git
+git clone https://github.com/wonerdering/laddy-support-bot.git
 
 cd laddy
 
